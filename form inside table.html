@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <h1>JOB APPLICATION FORM</h1>
+    <style>
+      h1{
+        background-color: black;
+        font-family: monospace;
+        text-align: center;
+        color:rgb(11, 194, 11);
+        font-size: 35px;
+        border:1px solid honeydew;
+        padding: 3px;
+      }
+      .info{
+       font-size: 20px;
+      }
+      body{
+        background-color:darkseagreen;
+      }
+      input{
+        border: 1px solid black;
+        padding: 8px 10px;
+      }
+      textarea{
+        border: 1px solid black;
+        padding: 30px 115px;
+      }
+      table{
+        margin-left: 50px;
+      }
+      select{
+        padding: 8px 10px ;
+        border: 1px solid black;
+      }
+
+    </style>
+    
+  </head>
+ <body>
+   <table>
+    
+     <tr>
+       <td style="font-size: 20px;"><b>Full Name</b></td>
+       <td><input type="text" name="name" placeholder="Enter full name"  size="50" required></td>
+     </tr>
+     <tr>
+       <td class="info"><br><b>Father Name</b></td>
+       <td><br><input type="text" name="fname" placeholder="Enter Father name" size="50" required></td>
+     </tr>    
+     <tr>
+       <td class="info"><br><b>Address</b></td>
+       <td><br><input type="text" name="address" placeholder="Address line 1" size="50" required><br>
+       <br><input type="text" name="address" placeholder="Address line 2" size="50" required></td>
+     </tr>
+     <tr>
+       <td class="info"><br><b>Gender</b></td>
+       <td><br><input type="radio" name="gender" value="male">Male
+       <input type="radio" name="gender" value="female">Female</td>
+     </tr>
+     <tr>
+       <td class="info"><br><b>Email</b></td>
+       <td><br><input type="email" name="email" placeholder="Enter email" size="50" required></td>
+     </tr>   
+     <tr>
+       <td class="info"><br><b>Contact</b></td>
+       <td><br><input type="text" name="contact" placeholder="Enter contact" maxlength="10" size="50"required></td>
+     </tr> 
+     <tr>
+       <td class="info"><br><b>Birth date</b></td> 
+       <td><br><input type="date" name="date" required></td>
+     </tr>
+     <tr>
+       <td class="info"><br><b>State</b></td>
+       <td><br>
+        <select>
+         <option>Select State</option><option>Andhra Pradesh</option><option>Assam</option><option>Arunachal Pradesh</option><option>Bihar</option><option>Chhattisgarh</option><option>Goa</option>
+         <option>Gujrat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jammu and Kashmir</option><option>Jharkhand</option><option>Manipur</option><option>Meghalaya</option>
+         <option>Karnataka</option><option>Kerala</option><option>Maharashtra</option><option>Madhya Pradesh</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option>
+         <option>Rajasthan</option><option>Sikkim</option><option>Tamilnadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+        </select></td>
+      </tr>
+     <tr>
+       <td class="info"><br><b>Pincode</b></td>
+       <td><br><input type="text" name="pincode" placeholder="Enter Pincode"required></td>
+     </tr>
+     <tr> 
+       <td class="info"><br><b>Aadhar Number</b></td>
+       <td><br><input type="text" name="Aadhar" placeholder="Enter Aadhar Number" maxlength="12" required></td>
+     </tr>
+     <tr>
+       <td class="info"><br><b>Why we select you?</b></td>
+       <td><br><textarea input type="textarea" name="subject" placeholder="write something..."></textarea>
+     </tr>
+     <tr>
+       <td class="info"><br><b>Upload Resume</b></td>
+       <td><br><input type="file" id="myfile" name="myfile">
+     </tr>
+     <tr>
+       <td></td>  
+       <td><br><input type="Submit" value="Submit Form" style="background-color: black;color: rgb(11, 194, 11);"></td>
+     </tr>    
+           
+    </table>
+  </body>
+</html>
